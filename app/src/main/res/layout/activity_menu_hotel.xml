@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    tools:context="com.application.wisatacilacap.MenuHotel">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0a8af8"
+        android:elevation="1dp"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="#ffffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonhotel1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotelhompremier2">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Hotel @Hom Premiere"
+                            android:textColor="#DD000000"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="center_vertical"
+                            android:text="Cilacap Utara, Cilacap"
+                            android:textColor="#DD000000"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#dd000000"
+                            android:layout_marginTop="51dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Harga mulai"
+                            android:textSize="9sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:text="Rp 341.000"
+                                android:textColor="#0a8af8"
+                                android:textSize="14sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="/kamar/malam"
+                                android:textColor="#DD000000"
+                                android:textSize="9sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/cardview2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonhotel2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotelfave">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Hotel Fave"
+                            android:textColor="#DD000000"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="center_vertical"
+                            android:text="Cilacap Selatan, Cilacap"
+                            android:textColor="#DD000000"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#dd000000"
+                            android:layout_marginTop="51dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Harga mulai"
+                            android:textSize="9sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:text="Rp 396.000"
+                                android:textColor="#0a8af8"
+                                android:textSize="14sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="/kamar/malam"
+                                android:textColor="#DD000000"
+                                android:textSize="9sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/cardview3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonhotel3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hoteldafam">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Hotel Dafam"
+                            android:textColor="#DD000000"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="center_vertical"
+                            android:text="Cilacap Selatan, Cilacap"
+                            android:textColor="#DD000000"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#dd000000"
+                            android:layout_marginTop="51dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Harga mulai"
+                            android:textSize="9sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:text="Rp 370.000"
+                                android:textColor="#0a8af8"
+                                android:textSize="14sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="/kamar/malam"
+                                android:textColor="#DD000000"
+                                android:textSize="9sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/cardview4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonhotel4"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotelwhiz">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Hotel Whiz"
+                            android:textColor="#DD000000"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="center_vertical"
+                            android:text="Cilacap Selatan, Cilacap"
+                            android:textColor="#DD000000"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#dd000000"
+                            android:layout_marginTop="51dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Harga mulai"
+                            android:textSize="9sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:text="Rp 280.000"
+                                android:textColor="#0a8af8"
+                                android:textSize="14sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="/kamar/malam"
+                                android:textColor="#DD000000"
+                                android:textSize="9sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/cardview5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonhotel5"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotelatrium">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Hotel Atrium Premiere"
+                            android:textColor="#DD000000"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="center_vertical"
+                            android:text="Cilacap Tengah, Cilacap"
+                            android:textColor="#DD000000"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#dd000000"
+                            android:layout_marginTop="51dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Harga mulai"
+                            android:textSize="9sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:text="Rp 375.000"
+                                android:textColor="#0a8af8"
+                                android:textSize="14sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="/kamar/malam"
+                                android:textColor="#DD000000"
+                                android:textSize="9sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/cardview6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/buttonhotel6"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:clickable="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotelmutiara">
+
+                    </ImageView>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Hotel Mutiara"
+                            android:textColor="#DD000000"
+                            android:textSize="14sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:background="@drawable/ic_star_black_24dp">
+                            </View>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:gravity="center_vertical"
+                            android:text="Cilacap Tengah, Cilacap"
+                            android:textColor="#DD000000"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:textColor="#dd000000"
+                            android:layout_marginTop="51dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text="Harga mulai"
+                            android:textSize="9sp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinssemibold"
+                                android:text="Rp 285.000"
+                                android:textColor="#0a8af8"
+                                android:textSize="14sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="/kamar/malam"
+                                android:textColor="#DD000000"
+                                android:textSize="9sp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

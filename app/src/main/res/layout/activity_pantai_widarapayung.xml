@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:fitsSystemWindows="true"
+    tools:context="com.application.wisatacilacap.Wisata.PantaiWidarapayung">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="48dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FDFCFB"
+                app:fillColor="#FFFFFF"
+                app:pageColor="#00000000"
+                app:radius="3dp"
+                app:slideInterval="3000"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:strokeWidth="0dp">
+
+            </com.synnapps.carouselview.CarouselView>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/line1"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:textColor="#DD000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Pantai Widarapayung"
+                        android:textSize="16sp">
+                    </TextView>
+                    <!-- <View
+                         android:background="@drawable/ic_star_black_24dp"
+                         android:layout_width="16dp"
+                         android:layout_height="16dp">
+                     </View>
+                     <View
+                         android:background="@drawable/ic_star_black_24dp"
+                         android:layout_width="16dp"
+                         android:layout_height="16dp">
+                     </View>
+                     <View
+                         android:background="@drawable/ic_star_black_24dp"
+                         android:layout_width="16dp"
+                         android:layout_height="16dp">
+                     </View>
+                         <View
+                             android:background="@drawable/ic_star_black_24dp"
+                             android:layout_width="16dp"
+                             android:layout_height="16dp">
+                         </View>
+                         <View
+                             android:background="@drawable/ic_star_black_off"
+                             android:layout_width="16dp"
+                             android:layout_height="16dp">
+                         </View>
+
+                         <TextView
+                             android:layout_marginLeft="7dp"
+                             android:textSize="12sp"
+                             android:text="4,2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content">
+
+                         </TextView>
+                         -->
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Widarapayung Wetan, Sawah,Ladang, Sidayu, Binangun, Kabupaten Cilacap, Jawa Tengah "
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="07.00 - 18.00 WIB"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="2dp"
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_rupiah"
+                    android:drawablePadding="11dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="5.000/orang"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Deskripsi"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Merupakan objek wisata pantai dengan luas sekitar 500 hektar terletak di Desa Widarapayung Kecamatan Binangun atau terletak ± 35 km arah timur dari Kota Cilacap.  Kondisi pantainya sangat landai dengan dipagari pohon kelapa sehingga menjadikan pantai sejuk. Pada bulan syura dilakukan Upacara Ritual Adat Tradisional Sedekah Bumi untuk larungan sesaji ke laut dengan diiringi kesenian daerah dan Pakaian Adat. Upacara Sedekah Bumi adalah merupakan salah satu perwujudan ungkapan rasa syukur yang dilakukan oleh masyarakat di sekitar Desa Widarapayung agar diberi keberkahan, keselamatan dalam sehari – harinya oleh Gusti kang Maha Agung.
+Obyek ini menawarkan panorama pantai yang indah, upacara adat dan kesenian daerah, gelombang laut yang relatif teratur dan cocok untuk selancar."
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Lokasi wisata"
+                    android:textSize="16sp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/map"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp" />
+
+                    <Button
+                        android:layout_below="@id/map"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:id="@+id/buttonmaps1"
+                        android:text="Lihat Peta"
+                        android:textColor="#ffffffff"
+                        android:background="@drawable/button_lokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

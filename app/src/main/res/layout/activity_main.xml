@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#0a8af8">
+
+        <View
+            android:layout_width="290dp"
+            android:layout_height="300dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-80dp"
+            android:layout_marginRight="-80dp"
+            android:background="@drawable/circle">
+
+        </View>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="26dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Hello,"
+            android:textColor="#FFDB56"
+            android:textSize="24dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="26dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="yuk jelajahi Cilacap!"
+            android:textColor="#ffffffff"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_margin="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonwisata"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/button_menu"
+                android:drawableTop="@drawable/ic_destination"
+                android:fontFamily="@font/poppinssemibold"
+                android:paddingTop="10dp"
+                android:text="Wisata"
+                android:textColor="#DD000000"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/buttonhotel"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:textSize="12sp"
+                android:background="@drawable/button_menu"
+                android:drawableTop="@drawable/ic_hotel"
+                android:fontFamily="@font/poppinssemibold"
+                android:paddingTop="10dp"
+                android:text="Hotel"
+                android:textColor="#DD000000">
+
+            </Button>
+
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/button_menu"
+                android:drawableTop="@drawable/ic_eat"
+                android:fontFamily="@font/poppinssemibold"
+                android:paddingTop="10dp"
+                android:text="Kuliner"
+                android:textColor="#DD000000">
+
+            </Button>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_weight="0"
+                android:textSize="12sp"
+                android:background="@drawable/button_menu"
+                android:drawableTop="@drawable/ic_user1"
+                android:fontFamily="@font/poppinssemibold"
+                android:paddingTop="10dp"
+                android:text="Tentang"
+                android:textColor="#DD000000">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Populer destinasi"
+                android:textColor="#DD000000"
+                android:textSize="16sp">
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3">
+
+                <HorizontalScrollView
+
+                    android:id="@+id/horziontal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:paddingBottom="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                        app:cardElevation="0dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/cardviewAmz1"
+                        android:layout_width="200dp"
+                        android:layout_height="270dp"
+                        android:clickable="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:scaleType="centerCrop"
+                                android:id="@+id/button1"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/benteng_pendem"
+                                android:clickable="true">
+                            </ImageView>
+
+                            <TextView
+                                android:fontFamily="@font/poppinsbold"
+                                android:id="@+id/textview1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Benteng Pendem"
+                                android:textColor="#ff000000"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/textview1"
+                                android:fontFamily="@font/poppinsregular"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Jl. Benteng, Sentolokawat, Cilacap"
+                                android:textColor="#333333"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            app:cardElevation="0dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/cardviewAmz2"
+                            android:layout_width="200dp"
+                            android:layout_height="270dp"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/button2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="180dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:src="@drawable/pantaitelukpenyu"
+                                    android:clickable="true">
+                                </ImageView>
+
+                                <TextView
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:id="@+id/textview22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Pantai Teluk Penyu"
+                                    android:textColor="#ff000000"
+                                    android:textSize="14sp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/textview1"
+                                    android:fontFamily="@font/poppinsregular"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Jl. Pasir Emas, Pandanarang, Cilacap"
+                                    android:textColor="#333333"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            app:cardElevation="0dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/cardviewAmz4"
+                            android:layout_width="200dp"
+                            android:layout_height="270dp"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/button3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="180dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:src="@drawable/kemitforest"
+                                    android:clickable="true">
+                                </ImageView>
+
+                                <TextView
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:id="@+id/textview23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Kemit Forest"
+                                    android:textColor="#ff000000"
+                                    android:textSize="14sp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/textview1"
+                                    android:fontFamily="@font/poppinsregular"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Jl. Srikaya Karanggedang"
+                                    android:textColor="#333333"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Rekomendasi kuliner"
+                android:textColor="#DD000000"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_marginBottom="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4">
+
+                <HorizontalScrollView
+                    android:id="@+id/horziontal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:paddingBottom="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/cardview1"
+                            android:layout_width="300dp"
+                            android:layout_height="275dp"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/button10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/brekecek"
+                                    android:clickable="true">
+                                </ImageView>
+
+                                <TextView
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:id="@+id/textview10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Brekecek"
+                                    android:textColor="#ff000000"
+                                    android:textSize="14sp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/textview1"
+                                    android:fontFamily="@font/poppinsregular"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Brekcek adalah hidangan ikan yang diberi bumbu rempah, hingga rasanya mirip seperti rica-rica."
+                                    android:textColor="#333333"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/cardview2"
+                            android:layout_width="300dp"
+                            android:layout_height="275dp"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/button11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/satemartawi"
+                                    android:clickable="true">
+                                </ImageView>
+
+                                <TextView
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:id="@+id/textview11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Sate Martawi"
+                                    android:textColor="#ff000000"
+                                    android:textSize="14sp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/textview1"
+                                    android:fontFamily="@font/poppinsregular"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Sate ini terbuat dari daging ayam yang dipotong dadu, ukuran dagingnya tergolong besar dibandingkan sate pada umumnya."
+                                    android:textColor="#333333"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/cardview3"
+                            android:layout_width="300dp"
+                            android:layout_height="275dp"
+                            android:clickable="true">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/button13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="@drawable/mendoan"
+                                    android:clickable="true">
+                                </ImageView>
+
+                                <TextView
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:id="@+id/textview13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="Mendoan"
+                                    android:textColor="#ff000000"
+                                    android:textSize="14sp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/textview1"
+                                    android:fontFamily="@font/poppinsregular"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:text="mendoan adalah makanan tempe tepung yang dimasak setengah matang. Ukuran tempe diiris dengan ukuran yang lebih besar."
+                                    android:textColor="#333333"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

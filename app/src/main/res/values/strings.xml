@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Wisata Cilacap</string>
+    <string name="title_activity_maps_benteng_pendem">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps_teluk_penyu">Map</string>
+    <string name="title_activity_maps_kemit_forest">Map</string>
+    <string name="title_activity_maps_hutan_payau">Map</string>
+    <string name="title_activity_maps_curug_cimendaway">Map</string>
+    <string name="title_activity_maps_pantai_widarapayung">Map</string>
+    <string name="title_activity_maps_hotel_atrium">Map</string>
+    <string name="title_activity_maps_hotel_dafam">Map</string>
+    <string name="title_activity_maps_hotel_fave">Map</string>
+    <string name="title_activity_maps_hom_premiere">Map</string>
+    <string name="title_activity_maps_hotel_mutiara">Map</string>
+    <string name="title_activity_maps_hotel_whiz">Map</string>
+</resources>

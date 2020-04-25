@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:fitsSystemWindows="true"
+    tools:context="com.application.wisatacilacap.Hotel.HotelAtrium">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleGravity="top"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FDFCFB"
+                app:fillColor="#FFFFFF"
+                app:pageColor="#00000000"
+                app:radius="3dp"
+                app:slideInterval="3000"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:strokeWidth="0dp">
+
+            </com.synnapps.carouselview.CarouselView>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:titleTextAppearance="@id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/line1"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:textColor="#DD000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Hotel Atrium Premiere"
+                    android:textSize="16sp">
+                </TextView>
+
+
+                <LinearLayout
+                    android:paddingTop="2dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                         android:background="@drawable/ic_star_black_24dp"
+                         android:layout_width="16dp"
+                         android:layout_height="16dp">
+                     </View>
+                     <View
+                         android:background="@drawable/ic_star_black_24dp"
+                         android:layout_width="16dp"
+                         android:layout_height="16dp">
+                     </View>
+                     <View
+                         android:background="@drawable/ic_star_black_24dp"
+                         android:layout_width="16dp"
+                         android:layout_height="16dp">
+                     </View>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Jalan S. Parman, Sidanegara, Cilacap Tengah, Cilacap, Sidanegara, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="0813 9302 7133"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="2dp"
+
+                    android:id="@+id/text6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="info@atriumcilacap.com"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Deskripsi"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="hotel ini adalah pilihan tepat bagi Anda dan pasangan yang ingin menikmati liburan romantis. Dapatkan pengalaman yang penuh kesan bersama pasangan dengan menginap di Atrium Premiere Hotel Cilacap.
+Atrium Premiere Hotel Cilacap adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini.
+Atrium Premiere Hotel Cilacap memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega.
+Atrium Premiere Hotel Cilacap adalah tempat bermalam yang tepat bagi Anda yang berlibur bersama keluarga. Nikmati segala fasilitas hiburan untuk Anda dan keluarga.
+Jika Anda berniat menginap dalam jangka waktu yang lama, Atrium Premiere Hotel Cilacap adalah pilihan tepat. Berbagai fasilitas yang tersedia dan kualitas pelayanan yang baik akan membuat Anda merasa sedang berada di rumah sendiri.
+Pengalaman menginap Anda tak akan terlupakan berkat pelayanan istimewa yang disertai oleh berbagai fasilitas pendukung untuk kenyamanan Anda."
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Fasilitas"
+                    android:textSize="16sp">
+                </TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- icon -->
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:background="@drawable/ic_020_shower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="12sp"
+                            android:text="Shower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:background="@drawable/ic_026_dryer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="12sp"
+                            android:text="Dryer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:background="@drawable/ic_041_elevator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="12sp"
+                            android:text="Lift"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:background="@drawable/ic_031_washing_machine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="12sp"
+                            android:text="Binatu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:background="@drawable/ic_036_bathtub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="12sp"
+                            android:text="Bathub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Check-in dan Check-out"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Check-in: Dari 14:00"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Check-out: Sebelum 12:00"
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="65dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Lokasi hotel"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Lokasi hotel sangat strategis karena hanya berjarak 9,16 km dengan Bandar Udara Tunggul Wulung (CXP).
+Dari Stasiun Cilacap, hotel ini hanya berjarak sekitar 1,42 km. Terdapat beberapa tempat menarik di sekitarnya, seperti Alun - Alun Cilacap yang berjarak sekitar 0,47 km dan Masjid Darussalam berjarak sekitar 0,6 km."
+                    android:textSize="14sp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/map"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp" />
+
+                    <Button
+                        android:layout_below="@id/map"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:id="@+id/buttonmaps1"
+                        android:text="Lihat Peta"
+                        android:textColor="#ffffffff"
+                        android:background="@drawable/button_lokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="Harga mulai"
+                android:textColor="#dd000000"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        <TextView
+            android:text="Rp. 380.000"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="16sp"
+            android:textColor="@color/biru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_gravity="bottom"
+            android:text="per kamar per malam"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="9sp"
+            android:textColor="#dd000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical|end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/telephone"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_call_white_24dp"
+            android:background="@drawable/hubungi"
+            android:textColor="#ffffffff"
+            android:textAllCaps="false"
+            android:text="Hubungi"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp">
+
+        </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

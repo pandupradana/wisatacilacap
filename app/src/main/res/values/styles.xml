@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0a8af8</item>
+        <item name="colorPrimaryDark">#107AE2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+       <!-- <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        transparent statusbar
+        -->
+
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/poppinsbold</item>
+        <item name="android:textColor">#DD000000</item>
+    </style>
+
+
+</resources>
