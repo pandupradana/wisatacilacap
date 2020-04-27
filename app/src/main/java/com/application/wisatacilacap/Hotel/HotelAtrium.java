@@ -22,6 +22,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.ms.square.android.expandabletextview.ExpandableTextView;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
@@ -80,6 +81,12 @@ public class HotelAtrium extends AppCompatActivity implements OnMapReadyCallback
             }
         });
 
+        // sample code snippet to set the text content on the ExpandableTextView
+        ExpandableTextView expTv1 = (ExpandableTextView) findViewById(R.id.expand_text_view);
+
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expTv1.setText(getString(R.string.desc_hotelatrium));
+
         /**CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
          collapsingToolbarLayout.setTitle("Benteng Pendem");
 
@@ -94,7 +101,7 @@ public class HotelAtrium extends AppCompatActivity implements OnMapReadyCallback
                                           @Override
                                           public void onClick(View v) {
                                               Intent callIntent = new Intent(Intent.ACTION_CALL);
-                                              callIntent.setData(Uri.parse("tel:*123#"));
+                                              callIntent.setData(Uri.parse("tel:123"));
                                               if (ActivityCompat.checkSelfPermission(HotelAtrium.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                                                   // TODO: Consider calling
                                                   //    ActivityCompat#requestPermissions

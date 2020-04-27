@@ -109,6 +109,11 @@
                          android:layout_width="16dp"
                          android:layout_height="16dp">
                      </View>
+                    <View
+                        android:background="@drawable/ic_star_black_24dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp">
+                    </View>
 
 
                 </LinearLayout>
@@ -181,23 +186,37 @@
                     android:textSize="16sp">
                 </TextView>
 
-                <TextView
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/text5"
+                <com.ms.square.android.expandabletextview.ExpandableTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/expand_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/poppinsregular"
-                    android:text="hotel ini adalah pilihan tepat bagi Anda dan pasangan yang ingin menikmati liburan romantis. Dapatkan pengalaman yang penuh kesan bersama pasangan dengan menginap di Atrium Premiere Hotel Cilacap.
-Atrium Premiere Hotel Cilacap adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini.
-Atrium Premiere Hotel Cilacap memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega.
-Atrium Premiere Hotel Cilacap adalah tempat bermalam yang tepat bagi Anda yang berlibur bersama keluarga. Nikmati segala fasilitas hiburan untuk Anda dan keluarga.
-Jika Anda berniat menginap dalam jangka waktu yang lama, Atrium Premiere Hotel Cilacap adalah pilihan tepat. Berbagai fasilitas yang tersedia dan kualitas pelayanan yang baik akan membuat Anda merasa sedang berada di rumah sendiri.
-Pengalaman menginap Anda tak akan terlupakan berkat pelayanan istimewa yang disertai oleh berbagai fasilitas pendukung untuk kenyamanan Anda."
-                    android:textSize="14sp">
-                </TextView>
+                    expandableTextView:maxCollapsedLines="4"
+                    expandableTextView:animDuration="200">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@id/expandable_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp">
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_gravity="center|bottom"
+                        android:background="@android:color/transparent"/>
+                </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
 
             </LinearLayout>
 
@@ -387,26 +406,61 @@ Pengalaman menginap Anda tak akan terlupakan berkat pelayanan istimewa yang dise
                     android:textSize="16sp">
                 </TextView>
 
-                <TextView
+                <!-- cek in cek out -->
+
+                <LinearLayout
                     android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
                     android:fontFamily="@font/poppinsregular"
-                    android:text="Check-in: Dari 14:00"
+                    android:text="Check-in"
                     android:textSize="14sp">
                 </TextView>
 
-                <TextView
+                    <TextView
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Dari 14:00"
+                        android:textSize="14sp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:fontFamily="@font/poppinsregular"
-                    android:text="Check-out: Sebelum 12:00"
-                    android:textSize="14sp">
-                </TextView>
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Check-out "
+                        android:textSize="14sp">
+                    </TextView>
+
+                    <TextView
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Sebelum 12:00"
+                        android:textSize="14sp">
+                    </TextView>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -510,7 +564,7 @@ Dari Stasiun Cilacap, hotel ini hanya berjarak sekitar 1,42 km. Terdapat beberap
             </TextView>
 
         <TextView
-            android:text="Rp. 380.000"
+            android:text="Rp. 600.000"
             android:fontFamily="@font/poppinssemibold"
             android:textSize="16sp"
             android:textColor="@color/biru"
