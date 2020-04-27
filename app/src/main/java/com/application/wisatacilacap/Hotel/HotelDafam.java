@@ -129,7 +129,7 @@ public class HotelDafam extends AppCompatActivity implements OnMapReadyCallback 
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.7492326,109.0172697);
+        LatLng sydney = new LatLng(-7.7321341,109.0127889);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Hotel Dafam"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14));
         mMap.getUiSettings().setZoomControlsEnabled(true);

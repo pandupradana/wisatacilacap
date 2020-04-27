@@ -109,11 +109,7 @@
                         android:layout_width="16dp"
                         android:layout_height="16dp">
                     </View>
-                    <View
-                        android:background="@drawable/ic_star_black_24dp"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp">
-                    </View>
+
 
 
                 </LinearLayout>
@@ -262,7 +258,7 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:background="@drawable/ic_020_shower"
+                            android:background="@drawable/ic_015_air_conditioner"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                         </ImageView>
@@ -272,7 +268,7 @@
                             android:gravity="center"
                             android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp"
-                            android:text="Shower"
+                            android:text="AC"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -287,7 +283,7 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:background="@drawable/ic_026_dryer"
+                            android:background="@drawable/ic_016_parking"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                         </ImageView>
@@ -297,7 +293,7 @@
                             android:gravity="center"
                             android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp"
-                            android:text="Dryer"
+                            android:text="Parkir"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -362,7 +358,7 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:background="@drawable/ic_036_bathtub"
+                            android:background="@drawable/ic_010_wifi_router"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                         </ImageView>
@@ -372,7 +368,7 @@
                             android:gravity="center"
                             android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp"
-                            android:text="Bathub"
+                            android:text="Wifi"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -494,8 +490,8 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:fontFamily="@font/poppinsregular"
-                    android:text="Lokasi hotel sangat strategis karena hanya berjarak 9,16 km dengan Bandar Udara Tunggul Wulung (CXP).
-Dari Stasiun Cilacap, hotel ini hanya berjarak sekitar 1,42 km. Terdapat beberapa tempat menarik di sekitarnya, seperti Alun - Alun Cilacap yang berjarak sekitar 0,47 km dan Masjid Darussalam berjarak sekitar 0,6 km."
+                    android:text="Lokasi hotel sangat strategis karena hanya berjarak 9,89 km dengan Bandar Udara Tunggul Wulung (CXP).
+Dari Stasiun Cilacap, hotel ini hanya berjarak sekitar 0,97 km. Hotel ini cukup mudah dijangkau karena berdekatan dengan fasilitas publik."
                     android:textSize="14sp">
                 </TextView>
 
@@ -564,7 +560,7 @@ Dari Stasiun Cilacap, hotel ini hanya berjarak sekitar 1,42 km. Terdapat beberap
             </TextView>
 
             <TextView
-                android:text="Rp. 600.000"
+                android:text="Rp. 370.000"
                 android:fontFamily="@font/poppinssemibold"
                 android:textSize="16sp"
                 android:textColor="@color/biru"

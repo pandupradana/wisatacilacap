@@ -142,7 +142,7 @@
                     android:drawableLeft="@drawable/ic_call_black_24dp"
                     android:drawablePadding="10dp"
                     android:fontFamily="@font/poppinsregular"
-                    android:text="0813 9302 7133"
+                    android:text="+62 813 9302 7133"
                     android:textSize="14sp">
                 </TextView>
 
