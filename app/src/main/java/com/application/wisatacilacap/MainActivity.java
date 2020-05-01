@@ -36,5 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Button btn3 = (Button) findViewById(R.id.buttonkuliner);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, MenuKuliner.class);
+                startActivity(i);
+            }
+        });
     }
 }
