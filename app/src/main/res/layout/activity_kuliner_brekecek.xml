@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:fitsSystemWindows="true"
+    tools:context="com.application.wisatacilacap.Kuliner.KulinerBrekecek">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleGravity="top"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                android:src="@drawable/brekecek"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:titleTextAppearance="@id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/line1"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:textColor="#DD000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Brekecek"
+                        android:textSize="16sp">
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Makanan khas Cilacap Jateng ini berasal dari kata ‘Brek’ yang artinya jatuh, sementara kata kecek adalah nama bumbu dari makanan itu sendiri. Brekcek adalah hidangan ikan yang diberi bumbu rempah, hingga rasanya mirip seperti rica-rica. Brekcek sudah menjadi makanan khas Cilacap, dan menjadi ikon kuliner di sana."
+                    android:textSize="14sp">
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Deskripsi"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Benteng Pendem adalah hasil lokalisasi dari nama Kusbatterij op de Lantong te Tjilatjap yang berarti “Beteng Pantai di Teluk Cilacap”. Ya, benteng ini merupakan bentuk pertahanan yang dibangun pada masa kolonial Belanda, tepatnya pada tahun 1861 hingga 1879.
+Meski sudah cukup berumur, benteng ini masih tampak kokoh hingga saat ini. Arsitektur yang memukau, lingkungan yang asri, berpadu dengan nilai sejarah yang kental, menjadikan Benteng Pendem sebagai salah satu destinasi wisata yang menarik dari tanah Cilacap."
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Lokasi wisata"
+                    android:textSize="16sp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/map"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp" />
+
+                    <Button
+                        android:layout_below="@id/map"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:id="@+id/buttonmaps1"
+                        android:text="Lihat Peta"
+                        android:textColor="#ffffffff"
+                        android:background="@drawable/button_lokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

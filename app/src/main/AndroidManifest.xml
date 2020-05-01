@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.application.wisatacilacap">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -25,7 +24,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".MenuKuliner"></activity>
+        <activity android:name=".Kuliner.KulinerTengiri" />
+        <activity android:name=".Kuliner.KulinerLanthing" />
+        <activity android:name=".Kuliner.KulinerSukun" />
+        <activity android:name=".Kuliner.KulinerMendoan" />
+        <activity android:name=".Kuliner.KulinerSate" />
+        <activity android:name=".Kuliner.KulinerBrekecek" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -40,7 +45,7 @@
 
         <activity
             android:name=".Maps.MapsHotelWhiz"
-            android:label="@string/title_activity_maps_hotel_whiz"></activity>
+            android:label="@string/title_activity_maps_hotel_whiz" />
         <activity
             android:name=".Maps.MapsHotelMutiara"
             android:label="@string/title_activity_maps_hotel_mutiara" />
