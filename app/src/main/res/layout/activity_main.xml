@@ -14,6 +14,7 @@
         android:layout_height="220dp"
         android:background="#0a8af8">
 
+        <!--
         <View
             android:layout_width="290dp"
             android:layout_height="300dp"
@@ -23,6 +24,29 @@
             android:background="@drawable/circle">
 
         </View>
+        -->
+
+        <RelativeLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleY="-1"
+            app:mwhVelocity="1"
+            app:mwhProgress="1"
+            app:mwhIsRunning="true"
+            app:mwhGradientAngle="45"
+            app:mwhWaveHeight="80dp"
+            app:mwhColorAlpha="0.35"
+            app:mwhStartColor="#7EC0FF"
+            app:mwhCloseColor="#85C7FD"
+            app:mwhWaves="MultiWave"/>
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/text1"
