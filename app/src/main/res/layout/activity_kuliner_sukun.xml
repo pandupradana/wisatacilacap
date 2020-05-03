@@ -1,9 +1,470 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:fitsSystemWindows="true"
     tools:context="com.application.wisatacilacap.Kuliner.KulinerSukun">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/keripiksukun">
+
+            </ImageView>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleTextAppearance="@id/collapsing_toolbar" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Keripik Sukun"
+                        android:textColor="#DD000000"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Makanan ini tergolong praktis sehingga cocok menjadi oleh-oleh. Rasanya renyah dan crispy membuat para turis atau warga Cilacap tidak pernah kapok mengonsumsinya. Keripik sukun rasanya sangat gurih, lebih empuk daripada singkong apalagi jika potongannya dekat dengan bagian tengah. Rasa renyah dan gurihnya alami tanpa tambahan garam sekalipun."
+                    android:textSize="14sp">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Tempat Rekomendasi"
+                    android:textColor="#DD000000"
+                    android:textSize="16sp">
+                </TextView>
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="16dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageview1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/thohasnack">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:text="Thoha Snack"
+                                    android:textColor="#dd000000">
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                                            android:drawablePadding="10dp"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:text="08.00 – 20.30">
+                                        </TextView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawableLeft="@drawable/ic_rupiah"
+                                            android:drawablePadding="12dp"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:text="17.000">
+                                        </TextView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                                            android:drawablePadding="10dp"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:text="(0282) 536 385">
+                                        </TextView>
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp"
+                                        android:gravity="right|center">
+
+                                        <Button
+                                            android:id="@+id/telephone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="36dp"
+                                            android:background="@drawable/hubungi"
+                                            android:clickable="true"
+                                            android:drawableLeft="@drawable/ic_call_white_24dp"
+                                            android:drawablePadding="5dp"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            android:paddingStart="10dp"
+                                            android:paddingEnd="10dp"
+                                            android:text="Hubungi"
+                                            android:textAllCaps="false"
+                                            android:textColor="#ffffffff"
+                                            android:textSize="14sp">
+
+                                        </Button>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_marginLeft="16dp"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageview2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/cemiland">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/poppinsbold"
+                                    android:text="Toko Oleh Oleh CemilLand"
+                                    android:textColor="#dd000000">
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                                            android:drawablePadding="10dp"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:text="08.00 – 20.00">
+                                        </TextView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawableLeft="@drawable/ic_rupiah"
+                                            android:drawablePadding="12dp"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:text="15.000">
+                                        </TextView>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                                            android:drawablePadding="10dp"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:text="0877 7899 9168">
+                                        </TextView>
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="10dp"
+                                        android:gravity="right|center">
+
+                                        <Button
+                                            android:id="@+id/telephone1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="36dp"
+                                            android:background="@drawable/hubungi"
+                                            android:clickable="true"
+                                            android:drawableLeft="@drawable/ic_call_white_24dp"
+                                            android:drawablePadding="5dp"
+                                            android:foreground="?attr/selectableItemBackground"
+                                            android:paddingStart="10dp"
+                                            android:paddingEnd="10dp"
+                                            android:text="Hubungi"
+                                            android:textAllCaps="false"
+                                            android:textColor="#ffffffff"
+                                            android:textSize="14sp">
+                                        </Button>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:layout_marginTop="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Lokasi"
+                    android:textColor="#DD000000"
+                    android:textSize="16sp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="16dp">
+
+                    <fragment
+                        android:id="@+id/map"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="#dd000000"
+                        android:id="@+id/textalamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/map"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Thoha Snack">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/textalamat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textalamat"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Cidapur, Donan, Kec. Cilacap Tengah, Kabupaten Cilacap, Jawa Tengah 53213">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="#dd000000"
+                        android:id="@+id/textalamat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textalamat1"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Toko Oleh Oleh CemilLand">
+                    </TextView>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:id="@+id/textalamat3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textalamat2"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Jl. Dr. Sutomo Pertokoan Semarak Town House no. 11 sebelah hotel, Nusantara, Sidakaya Dua, Sidanegara, Kec. Cilacap Sel., Kabupaten Cilacap, Jawa Tengah 53212">
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/buttonmaps1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textalamat3"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_lokasi"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:padding="10dp"
+                        android:text="Lihat Peta"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffffff"
+                        android:textSize="14sp">
+
+                    </Button>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

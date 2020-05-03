@@ -40,8 +40,16 @@ public class MapsKulinerMendoan extends FragmentActivity implements OnMapReadyCa
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng sydney = new LatLng(-7.73018,109.0015887);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Mendoan Wiratno"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setMapToolbarEnabled(true);
+
+        LatLng sydney1 = new LatLng(-7.7207682,109.0096216);
+        mMap.addMarker(new MarkerOptions().position(sydney1).title("Mendoan Pak Memet"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 10));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setMapToolbarEnabled(true);
     }
 }
