@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.application.wisatacilacap.Tentang.Credits">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="#ffffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Icon"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="16sp"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:text="Icon yang digunakan dalam pembuatan aplikasi ini diperoleh dari Freepik.com dan didesain oleh Freepik"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Image"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="16sp"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:text="Lidia Heliyanti\nLina J\nGontho Pramuhargono\nDablongan Clothing\nHarits\nAnjan Asmaly W"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Website"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="16sp"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:text="Website yang digunakan sebagai refrensi dalam pembuatan aplikasi:"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:text="https://wisata.cilacapkab.go.id\nhttps://www.kemitforest.com/\nhttps://pariwisatacilacap.wordpress.com\nhttps://kerupuktengiri.net/\nhttps://mytrip123.com\nhttps://traveloka.com"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#dd000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -55,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btn4 = (Button) findViewById(R.id.buttontentang);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, MenuTentang.class);
+                startActivity(i);
+            }
+        });
+
         //----------------------------------------------------------------------------------------------------/
 
         CardView btnwisata1 = (CardView) findViewById(R.id.cardviewpendem);

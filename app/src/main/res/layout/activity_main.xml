@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ecf0f1"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
 
@@ -133,7 +133,7 @@
             </Button>
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/buttontentang"
                 android:layout_width="74dp"
                 android:layout_height="74dp"
                 android:layout_weight="0"
@@ -158,6 +158,7 @@
         android:layout_below="@id/relative1">
 
         <RelativeLayout
+            android:background="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -177,6 +178,7 @@
 
             <RelativeLayout
                 android:id="@+id/relative2"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text3">
@@ -198,7 +200,6 @@
 
                         <android.support.v7.widget.CardView
                         android:foreground="?attr/selectableItemBackground"
-                        app:cardElevation="0dp"
                         app:cardUseCompatPadding="true"
                         app:cardCornerRadius="5dp"
                         android:layout_marginRight="5dp"
@@ -255,7 +256,6 @@
 
                         <android.support.v7.widget.CardView
                             android:foreground="?attr/selectableItemBackground"
-                            app:cardElevation="0dp"
                             app:cardUseCompatPadding="true"
                             app:cardCornerRadius="5dp"
                             android:layout_marginRight="5dp"
@@ -312,7 +312,6 @@
 
                         <android.support.v7.widget.CardView
                             android:foreground="?attr/selectableItemBackground"
-                            app:cardElevation="0dp"
                             app:cardUseCompatPadding="true"
                             app:cardCornerRadius="5dp"
                             android:layout_marginRight="5dp"

@@ -20,5 +20,14 @@
         <item name="android:textColor">#DD000000</item>
     </style>
 
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- warna button/action -->
+        <item name="colorAccent">#0a8af8</item>
+        <!-- warna title & message -->
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- warna layout -->
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
 
 </resources>
