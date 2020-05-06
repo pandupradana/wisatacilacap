@@ -129,9 +129,9 @@ public class HotelMutiara extends AppCompatActivity  implements OnMapReadyCallba
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.7090072,109.0170145);
+        LatLng sydney = new LatLng(-7.709017, 109.019207);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Hotel Mutiara"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

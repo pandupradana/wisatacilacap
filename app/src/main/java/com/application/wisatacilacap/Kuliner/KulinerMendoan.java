@@ -84,15 +84,15 @@ public class KulinerMendoan extends AppCompatActivity implements OnMapReadyCallb
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.73018,109.0015887);
+        LatLng sydney = new LatLng(-7.730169, 109.003730);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Mendoan Wiratno"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
 
-        LatLng sydney1 = new LatLng(-7.7207682,109.0096216);
+        LatLng sydney1 = new LatLng(-7.720790, 109.011810);
         mMap.addMarker(new MarkerOptions().position(sydney1).title("Mendoan Pak Memet"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 12));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

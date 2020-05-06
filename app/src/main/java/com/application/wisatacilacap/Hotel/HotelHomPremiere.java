@@ -130,9 +130,9 @@ public class HotelHomPremiere extends AppCompatActivity implements OnMapReadyCal
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.6909638,109.0323711);
+        LatLng sydney = new LatLng(-7.690978, 109.034556);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Hotel @HOM Premiere"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

@@ -40,9 +40,9 @@ public class MapsHotelAtrium extends FragmentActivity implements OnMapReadyCallb
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.72479,109.010819);
+        LatLng sydney = new LatLng(-7.724794, 109.013018);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Hotel Atrium Premiere"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

@@ -39,15 +39,15 @@ public class MapsKulinerLanthing extends FragmentActivity implements OnMapReadyC
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng sydney = new LatLng(-7.6815502,109.0067257);
+        LatLng sydney = new LatLng(-7.708973, 109.001964);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Thoha Snack"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
 
-        LatLng sydney1 = new LatLng(-7.7048002,109.0201159);
+        LatLng sydney1 = new LatLng(-7.7052736,109.0219122);
         mMap.addMarker(new MarkerOptions().position(sydney1).title("Cita Rasa Mandiri"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 12));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

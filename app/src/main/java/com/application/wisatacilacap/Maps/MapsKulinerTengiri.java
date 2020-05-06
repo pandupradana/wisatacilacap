@@ -40,21 +40,21 @@ public class MapsKulinerTengiri extends FragmentActivity implements OnMapReadyCa
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.6902594,109.0264451);
+        LatLng sydney = new LatLng(-7.690286, 109.028643);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Mandiri Okey"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 8));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
 
-        LatLng sydney1 = new LatLng(-7.7174022,109.026984);
+        LatLng sydney1 = new LatLng(-7.717396, 109.029160);
         mMap.addMarker(new MarkerOptions().position(sydney1).title("Kerupuk Tengiri Mr. Mackarel"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 8));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 10));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
 
-        LatLng sydney2 = new LatLng(-7.7346684,109.010909);
+        LatLng sydney2 = new LatLng(-7.734664, 109.013132);
         mMap.addMarker(new MarkerOptions().position(sydney2).title("Mino Arto"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney2, 8));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney2, 10));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

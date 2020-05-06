@@ -104,15 +104,15 @@ public class KulinerSate extends AppCompatActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.7207727,109.0118102);
+        LatLng sydney = new LatLng(-7.722514, 109.011225);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Sate Ayam Martawi"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
 
-        LatLng sydney1 = new LatLng(-7.7212528,109.013382);
+        LatLng sydney1 = new LatLng(-7.721250, 109.013338);
         mMap.addMarker(new MarkerOptions().position(sydney1).title("Sate Ayam Martawi"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney1, 12));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

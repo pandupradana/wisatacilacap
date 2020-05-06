@@ -129,9 +129,9 @@ public class HotelWhiz extends AppCompatActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.7280076,109.0096186);
+        LatLng sydney = new LatLng(-7.727921, 109.011803);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Hotel Whiz"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }

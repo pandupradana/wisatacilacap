@@ -129,9 +129,9 @@ public class HotelFave extends AppCompatActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-7.7277215,109.0146957);
+        LatLng sydney = new LatLng(-7.727730, 109.016905);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Hotel Fave"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMapToolbarEnabled(true);
     }
