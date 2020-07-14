@@ -61,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!-- HEADER -->
             <LinearLayout
                 android:paddingTop="10dp"
                 android:layout_marginTop="10dp"
@@ -163,6 +164,7 @@
 
             </LinearLayout>
 
+            <!-- DESKRIPSI -->
             <LinearLayout
                 android:id="@+id/line2"
                 android:paddingTop="10dp"
@@ -220,6 +222,7 @@
 
             </LinearLayout>
 
+            <!-- FASILITAS HOTEL -->
             <LinearLayout
                 android:id="@+id/line3"
                 android:paddingTop="10dp"
@@ -239,7 +242,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="Fasilitas"
+                    android:text="Fasilitas Hotel"
                     android:textSize="16sp">
                 </TextView>
 
@@ -255,14 +258,13 @@
                     <!-- icon -->
 
                     <LinearLayout
-                        android:layout_marginStart="10dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:layout_width="48dp"
+                        android:layout_width="55dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:background="@drawable/ic_020_shower"
+                            android:background="@drawable/ic_015_air_conditioner"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                         </ImageView>
@@ -272,7 +274,7 @@
                             android:gravity="center"
                             android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp"
-                            android:text="Shower"
+                            android:text="AC"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -283,11 +285,11 @@
                         android:layout_marginStart="10dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:layout_width="48dp"
+                        android:layout_width="55dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:background="@drawable/ic_026_dryer"
+                            android:background="@drawable/ic_007_restaurant"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                         </ImageView>
@@ -297,7 +299,7 @@
                             android:gravity="center"
                             android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp"
-                            android:text="Dryer"
+                            android:text="Restoran"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -308,7 +310,7 @@
                         android:layout_marginStart="10dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:layout_width="48dp"
+                        android:layout_width="55dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
@@ -333,7 +335,7 @@
                         android:layout_marginStart="10dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:layout_width="48dp"
+                        android:layout_width="55dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
@@ -358,11 +360,11 @@
                         android:layout_marginStart="10dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:layout_width="48dp"
+                        android:layout_width="55dp"
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:background="@drawable/ic_036_bathtub"
+                            android:background="@drawable/ic_010_wifi_router"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                         </ImageView>
@@ -372,7 +374,7 @@
                             android:gravity="center"
                             android:fontFamily="@font/poppinsregular"
                             android:textSize="12sp"
-                            android:text="Bathub"
+                            android:text="WiFi"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
@@ -383,6 +385,7 @@
 
             </LinearLayout>
 
+            <!-- CHECK IN/OUT -->
             <LinearLayout
                 android:id="@+id/line4"
                 android:paddingTop="10dp"
@@ -464,6 +467,243 @@
 
             </LinearLayout>
 
+            <!-- PILIHAN KAMAR -->
+            <LinearLayout
+                android:id="@+id/pilihankamar"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Pilihan Kamar"
+                    android:textSize="16sp">
+                </TextView>
+
+
+                <android.support.v7.widget.CardView
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/carouselview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#00FDFCFB"
+                        app:fillColor="#FFFFFF"
+                        app:pageColor="#00000000"
+                        app:radius="3dp"
+                        app:autoPlay="false"
+                        android:fitsSystemWindows="true"
+                        app:layout_collapseMode="none"
+                        app:strokeWidth="0dp">
+                    </com.synnapps.carouselview.CarouselView>
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Deluxe Twin">
+                        </TextView>
+
+                        <TextView
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Tamu\n2 tamu/kamar"
+                            android:drawableLeft="@drawable/ic_011_bellboy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Tipe Ranjang\n1 ranjang twin"
+                            android:drawableLeft="@drawable/ic_049_bed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Fasilitas Kamar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <com.ms.square.android.expandabletextview.ExpandableTextView
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/expand_text_view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            expandableTextView:maxCollapsedLines="1"
+                            expandableTextView:animDuration="200">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:id="@id/expandable_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="14sp">
+                            </TextView>
+
+                            <ImageButton
+                                android:id="@id/expand_collapse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_gravity="center|bottom"
+                                android:background="@android:color/transparent"/>
+                        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+                </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.synnapps.carouselview.CarouselView
+                            android:id="@+id/carouselview2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="#00FDFCFB"
+                            app:fillColor="#FFFFFF"
+                            app:pageColor="#00000000"
+                            app:radius="3dp"
+                            app:autoPlay="false"
+                            android:fitsSystemWindows="true"
+                            app:layout_collapseMode="none"
+                            app:strokeWidth="0dp">
+                        </com.synnapps.carouselview.CarouselView>
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Deluxe King">
+                        </TextView>
+
+                        <TextView
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Tamu\n2 tamu/kamar"
+                            android:drawableLeft="@drawable/ic_011_bellboy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Tipe Ranjang\n1 king bed"
+                            android:drawableLeft="@drawable/ic_049_bed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Fasilitas Kamar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <com.ms.square.android.expandabletextview.ExpandableTextView
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/expand_text_view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            expandableTextView:maxCollapsedLines="1"
+                            expandableTextView:animDuration="200">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:id="@id/expandable_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textSize="14sp">
+                            </TextView>
+
+                            <ImageButton
+                                android:id="@id/expand_collapse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_gravity="center|bottom"
+                                android:background="@android:color/transparent"/>
+                        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- LOKASI HOTEL -->
             <LinearLayout
                 android:layout_marginBottom="65dp"
                 android:paddingTop="10dp"
@@ -471,7 +711,7 @@
                 android:background="#ffffffff"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
-                android:layout_below="@id/line4"
+                android:layout_below="@id/pilihankamar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
