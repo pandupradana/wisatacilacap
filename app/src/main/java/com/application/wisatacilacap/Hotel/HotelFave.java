@@ -30,9 +30,12 @@ public class HotelFave extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
 
 
-    CarouselView carouselView;
+    CarouselView carouselView,carouselView1,carouselView2,carouselView3;
 
     int[] images = {R.drawable.hotelfave, R.drawable.hotelfave1, R.drawable.hotelfave2, R.drawable.hotelfave3};
+    int[] images1 = {R.drawable.faveroom1, R.drawable.faveroom2, R.drawable.faveroom3, R.drawable.faveroom4};
+    int[] images2 = {R.drawable.freshroom1, R.drawable.freshroom2, R.drawable.freshroom3, R.drawable.freshroom4};
+    int[] images3 = {R.drawable.fabroom1, R.drawable.fabroom2, R.drawable.fabroom3, R.drawable.fabroom4};
 
     private Toolbar mToolbar;
 
@@ -46,10 +49,46 @@ public class HotelFave extends AppCompatActivity implements OnMapReadyCallback {
         carouselView.setPageCount(images.length);
         carouselView.setImageListener(imageListener);
 
+        //carouselview1
+        carouselView1 = (CarouselView) findViewById(R.id.carouselview1);
+        carouselView1.setPageCount(images1.length);
+        carouselView1.setImageListener(imageListener1);
+
+        //carouselview2
+        carouselView2 = (CarouselView) findViewById(R.id.carouselview2);
+        carouselView2.setPageCount(images2.length);
+        carouselView2.setImageListener(imageListener2);
+
+        //carouselview3
+        carouselView3 = (CarouselView) findViewById(R.id.carouselview3);
+        carouselView3.setPageCount(images3.length);
+        carouselView3.setImageListener(imageListener3);
+
         ImageListener imageListener = new ImageListener() {
             @Override
             public void setImageForPosition(int position, ImageView imageView) {
                 imageView.setImageResource(images[position]);
+            }
+        };
+
+        ImageListener imageListener1 = new ImageListener() {
+            @Override
+            public void setImageForPosition(int position, ImageView imageView) {
+                imageView.setImageResource(images1[position]);
+            }
+        };
+
+        ImageListener imageListener2 = new ImageListener() {
+            @Override
+            public void setImageForPosition(int position, ImageView imageView) {
+                imageView.setImageResource(images2[position]);
+            }
+        };
+
+        ImageListener imageListener3 = new ImageListener() {
+            @Override
+            public void setImageForPosition(int position, ImageView imageView) {
+                imageView.setImageResource(images3[position]);
             }
         };
 
@@ -84,6 +123,24 @@ public class HotelFave extends AppCompatActivity implements OnMapReadyCallback {
 
         // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
         expTv1.setText(getString(R.string.desc_hotelfave));
+
+        // sample code snippet to set the text content on the ExpandableTextView
+        ExpandableTextView expTv2 = (ExpandableTextView) findViewById(R.id.expand_text_view1);
+
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expTv2.setText(getString(R.string.faveroom));
+
+        // sample code snippet to set the text content on the ExpandableTextView
+        ExpandableTextView expTv3 = (ExpandableTextView) findViewById(R.id.expand_text_view2);
+
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expTv3.setText(getString(R.string.freshroom));
+
+        // sample code snippet to set the text content on the ExpandableTextView
+        ExpandableTextView expTv4 = (ExpandableTextView) findViewById(R.id.expand_text_view3);
+
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expTv4.setText(getString(R.string.fabroom));
 
         /**CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
          collapsingToolbarLayout.setTitle("Benteng Pendem");
@@ -120,6 +177,30 @@ public class HotelFave extends AppCompatActivity implements OnMapReadyCallback {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
             imageView.setImageResource(images[position]);
+
+        }
+    };
+
+    ImageListener imageListener1 = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(images1[position]);
+
+        }
+    };
+
+    ImageListener imageListener2 = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(images2[position]);
+
+        }
+    };
+
+    ImageListener imageListener3 = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(images3[position]);
 
         }
     };

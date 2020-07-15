@@ -27,5 +27,27 @@
     <string name="title_activity_maps_kuliner_sate">Map</string>
     <string name="title_activity_maps_kuliner_sukun">Map</string>
     <string name="title_activity_maps_kuliner_tengiri">Map</string>
+
+    <!--atrium-->
     <string name="fasilitaskamaratrium">• AC\n• Air minum kemasan cuma-cuma\n• Pembuat kopi / teh\n• Minibar\n• Kulkas\n• Televisi\n• Desk\n• Brankas dalam kamar</string>
+
+    <!--dafam-->
+    <string name="superiordafam">• AC\n• Air minum kemasan cuma-cuma\n• Pembuat kopi / teh\n• Televisi\n• Desk</string>
+    <string name="deluxedafam">• AC\n• Air minum kemasan cuma-cuma\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Brankas dalam kamar</string>
+    <string name="executivedafam">• AC\n• Air minum kemasan cuma-cuma\n• Pembuat kopi / teh\n• Minibar\n• Televisi\n• Desk\n• Brankas dalam kamar</string>
+
+    <!--fave-->
+    <string name="faveroom">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Brankas dalam kamar\n• Setrika</string>
+    <string name="freshroom">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Brankas dalam kamar\n• Setrika</string>
+    <string name="fabroom">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Brankas dalam kamar\n• Setrik</string>
+
+    <!--hompremiere-->
+    <string name="superior">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Air minum kemasan cuma-cuma</string>
+    <string name="deluxe">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Minibar\n• Kulkas\n• Air minum kemasan cuma-cuma</string>
+    <string name="juniorsuite">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Minibar\n• Kulkas\n• Air minum kemasan cuma-cuma</string>
+    <string name="executivesuite">• AC\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Minibar\n• Kulkas\n• Air minum kemasan cuma-cuma\n• Brankas dalam kamar\n• Bathub</string>
+
+    <!--mutiara-->
+    <string name="mutiarasuperior">• AC\n• Air minum kemasan cuma-cuma\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Brankas dalam kamar\n• Minibar</string>
+    <string name="mutiaradeluxe">• AC\n• Air minum kemasan cuma-cuma\n• Pembuat kopi / teh\n• Televisi\n• Desk\n• Brankas dalam kamar\n• Minibar\n• Free Newspaper</string>
 </resources>

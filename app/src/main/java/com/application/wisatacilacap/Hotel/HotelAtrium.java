@@ -56,9 +56,9 @@ public class HotelAtrium extends AppCompatActivity implements OnMapReadyCallback
         carouselView1.setImageListener(imageListener1);
 
         //carouselview1
-        carouselView1 = (CarouselView) findViewById(R.id.carouselview2);
-        carouselView1.setPageCount(images2.length);
-        carouselView1.setImageListener(imageListener2);
+        carouselView2 = (CarouselView) findViewById(R.id.carouselview2);
+        carouselView2.setPageCount(images2.length);
+        carouselView2.setImageListener(imageListener2);
 
         ImageListener imageListener = new ImageListener() {
             @Override

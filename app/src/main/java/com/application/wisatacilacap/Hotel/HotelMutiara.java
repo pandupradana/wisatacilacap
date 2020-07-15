@@ -30,9 +30,11 @@ public class HotelMutiara extends AppCompatActivity  implements OnMapReadyCallba
     private GoogleMap mMap;
 
 
-    CarouselView carouselView;
+    CarouselView carouselView, carouselView1, carouselView2;
 
     int[] images = {R.drawable.hotelmutiara, R.drawable.hotelmutiara1, R.drawable.hotelmutiara2, R.drawable.hotelmutiara3};
+    int[] images1 = {R.drawable.superior1, R.drawable.superior2};
+    int[] images2 = {R.drawable.deluxe1, R.drawable.deluxe2};
 
     private Toolbar mToolbar;
 
@@ -46,10 +48,34 @@ public class HotelMutiara extends AppCompatActivity  implements OnMapReadyCallba
         carouselView.setPageCount(images.length);
         carouselView.setImageListener(imageListener);
 
+        //carouselview1
+        carouselView1 = (CarouselView) findViewById(R.id.carouselview1);
+        carouselView1.setPageCount(images1.length);
+        carouselView1.setImageListener(imageListener1);
+
+        //carouselview1
+        carouselView2 = (CarouselView) findViewById(R.id.carouselview2);
+        carouselView2.setPageCount(images2.length);
+        carouselView2.setImageListener(imageListener2);
+
         ImageListener imageListener = new ImageListener() {
             @Override
             public void setImageForPosition(int position, ImageView imageView) {
                 imageView.setImageResource(images[position]);
+            }
+        };
+
+        ImageListener imageListener1 = new ImageListener() {
+            @Override
+            public void setImageForPosition(int position, ImageView imageView) {
+                imageView.setImageResource(images1[position]);
+            }
+        };
+
+        ImageListener imageListener2 = new ImageListener() {
+            @Override
+            public void setImageForPosition(int position, ImageView imageView) {
+                imageView.setImageResource(images2[position]);
             }
         };
 
@@ -84,6 +110,18 @@ public class HotelMutiara extends AppCompatActivity  implements OnMapReadyCallba
 
         // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
         expTv1.setText(getString(R.string.desc_hotelmutiara));
+
+        // sample code snippet to set the text content on the ExpandableTextView
+        ExpandableTextView expTv2 = (ExpandableTextView) findViewById(R.id.expand_text_view1);
+
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expTv2.setText(getString(R.string.mutiarasuperior));
+
+        // sample code snippet to set the text content on the ExpandableTextView
+        ExpandableTextView expTv3 = (ExpandableTextView) findViewById(R.id.expand_text_view2);
+
+        // IMPORTANT - call setText on the ExpandableTextView to set the text content to display
+        expTv3.setText(getString(R.string.mutiaradeluxe));
 
         /**CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
          collapsingToolbarLayout.setTitle("Benteng Pendem");
@@ -120,6 +158,22 @@ public class HotelMutiara extends AppCompatActivity  implements OnMapReadyCallba
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
             imageView.setImageResource(images[position]);
+
+        }
+    };
+
+    ImageListener imageListener1 = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(images1[position]);
+
+        }
+    };
+
+    ImageListener imageListener2 = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(images2[position]);
 
         }
     };
