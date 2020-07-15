@@ -522,7 +522,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Deluxe Twin">
+                            android:text="Superior">
                         </TextView>
 
                         <TextView
@@ -541,7 +541,7 @@
                             android:fontFamily="@font/poppinsregular"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="5dp"
-                            android:text="Tipe Ranjang\n1 ranjang twin"
+                            android:text="Tipe Ranjang\n2 ranjang twin Atau 1 queen bed"
                             android:drawableLeft="@drawable/ic_049_bed"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -625,7 +625,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Deluxe King">
+                            android:text="Deluxe">
                         </TextView>
 
                         <TextView
@@ -644,7 +644,7 @@
                             android:fontFamily="@font/poppinsregular"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="5dp"
-                            android:text="Tipe Ranjang\n1 king bed"
+                            android:text="Tipe Ranjang\n2 ranjang twin Atau 1 queen bed"
                             android:drawableLeft="@drawable/ic_049_bed"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -699,6 +699,7 @@
 
             </LinearLayout>
 
+            <!-- LOKASI HOTEL -->
             <LinearLayout
                 android:layout_marginBottom="65dp"
                 android:paddingTop="10dp"
