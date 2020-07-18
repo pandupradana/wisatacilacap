@@ -60,10 +60,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!--DESKRIPSI-->
             <LinearLayout
                 android:paddingTop="10dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/line1"
+                android:id="@+id/line"
                 android:paddingBottom="10dp"
                 android:background="#ffffffff"
                 android:layout_width="match_parent"
@@ -155,23 +156,110 @@
                     android:textSize="14sp">
                 </TextView>
 
+
+            </LinearLayout>
+
+            <!--HARGA-->
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line"
+                android:id="@+id/line1"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textharga"
+                        android:textColor="#DD000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Harga"
+                        android:textSize="16sp">
+                    </TextView>
+
+                </LinearLayout>
+
                 <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/texttiketmasuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Tiket Masuk"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text24"
                     android:layout_marginTop="2dp"
-                    android:paddingStart="2dp"
-                    android:id="@+id/text6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
-                    android:drawableLeft="@drawable/ic_rupiah"
-                    android:drawablePadding="11dp"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="10dp"
                     android:fontFamily="@font/poppinsregular"
-                    android:text="10.000/orang"
+                    android:text="Rp. 12.500/orang"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/texttiketparkir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Parkir"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text32"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_cars"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Rp. 5.000"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/text12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableLeft="@drawable/ic_motorcycle_"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Rp. 2.000"
                     android:textSize="14sp">
                 </TextView>
 
             </LinearLayout>
 
+            <!--DESKRIPSI-->
             <LinearLayout
                 android:id="@+id/line2"
                 android:paddingTop="10dp"
@@ -209,13 +297,52 @@
 
             </LinearLayout>
 
+            <!--FASILITAS-->
             <LinearLayout
+                android:id="@+id/line3"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:background="#ffffffff"
                 android:orientation="vertical"
                 android:layout_marginTop="10dp"
                 android:layout_below="@id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text22"
+                    android:textColor="#DD000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Fasilitas"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/text23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Fasilitas yang disediakan di Wisata Hutan Payau ini diantaranya seperti toilet umum, tempat parkir, spot-spot foto yang menarik untuk para pengunjung, warung-warung yang menyediakan berbagai macam makanan dan minuman, serta terdapat wahana perahu yang akan mengantarkan pengunjung mengelilingi hutan payau, cukup dengan Rp. 10.000 untuk dewasa dan Rp. 5.000 untuk anak-anak pengunjung sudah dapat menaiki wisata perahu tersebut. "
+                    android:textSize="14sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <!--LOKASI-->
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/line3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 

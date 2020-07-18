@@ -279,7 +279,7 @@
                         android:layout_marginRight="5dp"
                         android:fontFamily="@font/poppinsbold"
                         android:paddingLeft="5dp"
-                        android:text="Curug Cimendaway"
+                        android:text="Curug Cimandaway"
                         android:textColor="#ff000000"
                         android:textSize="14sp" />
 
